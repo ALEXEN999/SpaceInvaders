@@ -6,16 +6,17 @@ import java.awt.*;
 public class Nave {
 
     //Variables
-    boolean vida;
-    int color;
     int x, y;
-    int size;
-    int movimiento;
-    Image image;
+    int w, h;
+
     //Metodos
 
     void pintar (){
-        ImageIcon imageIcon = new ImageIcon("src/com.company/image.png");
-        image = imageIcon.getImage();
+            Canvas.fillRect(x+w*2,y,w,h);
+            Canvas.fillRect(x,y+h*2,w,h);
+            Canvas.fillRect(x+w*2,y+h*2,w,h);
+            Canvas.fillRect(x+w*4,y+h*2,w,h);
+
+
     }
 }
